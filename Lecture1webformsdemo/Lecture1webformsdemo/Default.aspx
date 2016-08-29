@@ -40,3 +40,19 @@
     </div>
 
 </asp:Content>
+<asp:Content ID="Content1" ContentPlaceHolderID="SecondaryContent" runat="server">
+    <div class="jumbotron">
+        <h1>Secondary Content</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Schtuff!</h2>
+        <p>There are alot of stuff to say about ASP.NET
+            What do you have to say? :)
+        </p>
+            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <asp:Button ID="Button1" runat="server" OnClick="Button_Click" />
+            <asp:Label ID="Label1" runat="server"></asp:Label>
+            </div>
+    </div>
+</asp:Content>
