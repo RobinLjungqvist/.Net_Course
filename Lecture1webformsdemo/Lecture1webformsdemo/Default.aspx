@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Lecture1webformsdemo._Default" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="BodyContent" ContentPlaceHolderID="SecondaryContent" runat="server">
 
     <div class="jumbotron">
         <h1>ASP.NET</h1>
@@ -40,9 +40,9 @@
     </div>
 
 </asp:Content>
-<asp:Content ID="Content1" ContentPlaceHolderID="SecondaryContent" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="jumbotron">
-        <h1>Secondary Content</h1>
+        <h1>Testing out stuff</h1>
     </div>
     <div class="row">
         <div class="col-md-12">
@@ -52,6 +52,7 @@
         </p>
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
             <asp:Button ID="Button1" runat="server" OnClick="Button_Click" />
+            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Robbify?" />
             <asp:Label ID="Label1" runat="server"></asp:Label>
             </div>
     </div>
