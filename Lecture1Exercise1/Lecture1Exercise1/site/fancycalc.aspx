@@ -12,7 +12,7 @@
     
         <asp:TextBox ID="TextBox1" runat="server" ReadOnly="True" Width="271px" Height="37px"></asp:TextBox>
         <br />
-        <asp:Button ID="Button1" runat="server" Text="1" Width="70px" />
+        <asp:Button ID="Button1" runat="server" Text="1" Width="70px" OnClick="Button1_Click" />
         <asp:Button ID="Button2" runat="server" Text="2" Width="70px" />
         <asp:Button ID="Button3" runat="server" Text="3" Width="70px" />
         <asp:Button ID="ButtonAdd" runat="server" Text="+" Width="70px" />
