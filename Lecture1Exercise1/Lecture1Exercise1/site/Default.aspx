@@ -24,12 +24,17 @@
             <br />
             <asp:Label runat="server" Text="Music"></asp:Label><asp:RadioButton ID="btn_music" runat="server" AutoPostBack="True" OnCheckedChanged="btn_music_CheckedChanged" />
             <asp:Label runat="server" Text="News in swedish."></asp:Label><asp:RadioButton ID="btn_news" runat="server" AutoPostBack="True" OnCheckedChanged="btn_news_CheckedChanged" />
+            <asp:Label runat="server" Text="Math"></asp:Label><asp:RadioButton ID="btn_math" runat="server" AutoPostBack="True" OnCheckedChanged="btn_math_CheckedChanged" />
             <asp:Panel ID="panel_music" runat="server" Height="30px" Visible="False">
                 <a href="http://www.spotify.com">Spotify</a>
             </asp:Panel>
             <asp:Panel ID="panel_news" runat="server" Visible="False">
                 <a href="http://www.Omni.se">Omni</a>
                 </asp:Panel>
+            <asp:Panel ID="panel_math" runat="server" Visible="False">
+                <a href="calc.aspx">Calculator</a> <br />
+                <a href="fancycalc.aspx">Fancier Calculator</a>
+            </asp:Panel>
             
         </div>
     </form>

@@ -29,16 +29,29 @@ namespace Lecture1Exercise1.site
         protected void btn_music_CheckedChanged(object sender, EventArgs e)
         {
             btn_news.Checked = false;
+            btn_math.Checked = false;
             panel_music.Visible = true;
+            panel_math.Visible = false;
             panel_news.Visible = false;
         }
 
         protected void btn_news_CheckedChanged(object sender, EventArgs e)
         { 
             btn_music.Checked = false;
+            btn_math.Checked = false;
             panel_music.Visible = false;
+            panel_math.Visible = false;
             panel_news.Visible = true;
             
+        }
+
+        protected void btn_math_CheckedChanged(object sender, EventArgs e)
+        {
+            btn_music.Checked = false;
+            btn_math.Checked = false;
+            panel_music.Visible = false;
+            panel_news.Visible = false;
+            panel_math.Visible = true;
         }
     }
 }

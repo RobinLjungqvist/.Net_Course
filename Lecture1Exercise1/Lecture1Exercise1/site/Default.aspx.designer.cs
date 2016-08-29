@@ -76,6 +76,15 @@ namespace Lecture1Exercise1.site {
         protected global::System.Web.UI.WebControls.RadioButton btn_news;
         
         /// <summary>
+        /// btn_math control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton btn_math;
+        
+        /// <summary>
         /// panel_music control.
         /// </summary>
         /// <remarks>
@@ -92,5 +101,14 @@ namespace Lecture1Exercise1.site {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel panel_news;
+        
+        /// <summary>
+        /// panel_math control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel panel_math;
     }
 }

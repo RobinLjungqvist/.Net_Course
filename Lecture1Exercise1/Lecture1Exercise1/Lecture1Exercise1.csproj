@@ -110,6 +110,7 @@
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="site\calc.aspx" />
     <Content Include="site\Default.aspx" />
+    <Content Include="site\fancycalc.aspx" />
     <Content Include="style\MyStyle.css" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -128,6 +129,13 @@
     </Compile>
     <Compile Include="site\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="site\fancycalc.aspx.cs">
+      <DependentUpon>fancycalc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="site\fancycalc.aspx.designer.cs">
+      <DependentUpon>fancycalc.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>

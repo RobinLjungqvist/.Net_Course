@@ -7,3 +7,10 @@
     padding: 10px;
     margin-bottom: 10px;
 }
+a{
+    color: #ff0000;
+
+}
+a:visited{
+    color: #ffd800;
+}
