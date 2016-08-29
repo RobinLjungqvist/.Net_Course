@@ -3,7 +3,7 @@
 }
 .main{
     background-color:#072e3b;
-    box-shadow: 4px 4px 4px 4px;
     color: white;
-    padding-bottom: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
 }

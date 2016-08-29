@@ -25,5 +25,20 @@ namespace Lecture1Exercise1.site
                 OutputLabel.Text = "Write your name!";
             }
         }
+
+        protected void btn_music_CheckedChanged(object sender, EventArgs e)
+        {
+            btn_news.Checked = false;
+            panel_music.Visible = true;
+            panel_news.Visible = false;
+        }
+
+        protected void btn_news_CheckedChanged(object sender, EventArgs e)
+        { 
+            btn_music.Checked = false;
+            panel_music.Visible = false;
+            panel_news.Visible = true;
+            
+        }
     }
 }
