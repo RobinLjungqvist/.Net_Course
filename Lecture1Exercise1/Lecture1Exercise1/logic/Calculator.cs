@@ -10,16 +10,17 @@ namespace Lecture1Exercise1.logic
         Addition,
         Subtract,
         Multiply,
-        Divide
+        Divide,
+        Empty
     }
-    public class Calculator
+    public static class Calculator
     {
-        public string firstNumber { get; set; }
-        public string secondNumber { get; set; }
+        public static string firstNumber { get; set; }
+        public static string secondNumber { get; set; }
+        
+        public static Operator Operator { get; set; }
 
-        public Operator Operator { get; set; }
-
-        public int Calculate() {
+        public static int Calculate() {
 
             int first = int.Parse(firstNumber);
             int second = int.Parse(secondNumber);
@@ -48,22 +49,22 @@ namespace Lecture1Exercise1.logic
         }
 
 
-        private int Add(int first, int second)
+        private static int Add(int first, int second)
         {
             var result = first + second;
             return result;
         }
-        private int Subtract(int first, int second)
+        private static int Subtract(int first, int second)
         {
             var result = first - second;
             return result;
         }
-        private int Multiply(int first, int second)
+        private static int Multiply(int first, int second)
         {
             var result = first * second;
             return result;
         }
-        private int Divide(int first, int second)
+        private static int Divide(int first, int second)
         {
             var result = first / second;
             return result;
