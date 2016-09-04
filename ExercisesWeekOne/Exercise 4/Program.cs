@@ -22,6 +22,8 @@ namespace Exercise_4
             CheckForValue(5, dictInt);
             CheckForValue(8, dictInt);
 
+
+
             Console.WriteLine("--------------");
             dictInt = RemoveDuplicateEntries(dictInt);
             dictInt.Remove(3);
