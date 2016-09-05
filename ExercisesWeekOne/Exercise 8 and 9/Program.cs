@@ -16,7 +16,12 @@ namespace Exercise_8_and_9
                 FillCollection(myIntList);
                 var Search = new BruteForceSearch();
                 Search.GetNumber(myIntList, 256);
-                var result = Search.GetNumberByBinarySearch(myIntList, 256);
+                //var result = Search.GetNumberByBinarySearch(myIntList, 256); // BinarySearch
+
+                //Search.BubbleSort(myIntList);  //BubbleSort
+                Search.ExchangeSort(myIntList);
+                myIntList.ForEach(x => Console.WriteLine(x));
+
                 Console.ReadKey(); 
             }
         }
