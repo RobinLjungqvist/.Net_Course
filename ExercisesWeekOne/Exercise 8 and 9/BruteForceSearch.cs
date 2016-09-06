@@ -42,7 +42,7 @@ namespace Exercise_8_and_9
 
             while (first <= last)
             {
-                var mid = (first + last) / 2;
+                int mid = (first + last) / 2;
 
                 if(nrToSearch > mid)
                 {

@@ -29,7 +29,7 @@ namespace Exercise_8_and_9
         public static void FillCollection(List<int> collection)
         {
             var rnd = new Random();
-            for (int i = 0; i < 200; i++)
+            for (int i = 0; i < 199; i++)
             {
                 int tal = rnd.Next(1, 1000);
                 while (collection.Contains(tal))
