@@ -36,7 +36,7 @@ namespace ExercisesWeekTwo
             Console.WriteLine($"{numb1} + {numb2} = {Add(numb1, numb2)}");
 
 
-            /* In this example we don't get any compiler errors, but we get an aritmatistic overflow
+            /* In this example we don't get any compiler errors, but we get an aritmethic overflow
              * 
              * 
              */
