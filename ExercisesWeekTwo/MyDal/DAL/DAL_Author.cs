@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using MyDal.Models;
 using System.Data;
 
-namespace MyDal.Models
+namespace MyDal.DAL
 {
     public class DAL_Author
     {
@@ -15,7 +15,8 @@ namespace MyDal.Models
 
         public void OpenConnection(string connectionString)
         {
-            _sqlConnection.ConnectionString = connectionString;
+            _sqlConnection = new SqlConnection(connectionString);
+            _sqlConnection.Open();
         }
         public void CloseConnection()
         {
@@ -25,7 +26,7 @@ namespace MyDal.Models
 
         public void InsertAuthor(string firstName, string lastName)
         {
-            var sql = $"INSERT INTO Authors(FirstName, LastName) VALUES('{firstName}','{lastName}'";
+            var sql = $"INSERT INTO Authors(FirstName, LastName) VALUES('{firstName}','{lastName}')";
 
             using (var cmd = new SqlCommand(sql, _sqlConnection))
             {
