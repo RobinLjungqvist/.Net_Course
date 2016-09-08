@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethodsDemo", "Ext
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise1", "Exercise1\Exercise1.csproj", "{E7E97331-E51F-4F4B-953E-E24D18C1B4BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ado.NETdemo", "Ado.NETdemo\Ado.NETdemo.csproj", "{31FC25CD-F294-4C27-B487-FBDFDF5B3F19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{E7E97331-E51F-4F4B-953E-E24D18C1B4BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7E97331-E51F-4F4B-953E-E24D18C1B4BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7E97331-E51F-4F4B-953E-E24D18C1B4BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31FC25CD-F294-4C27-B487-FBDFDF5B3F19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31FC25CD-F294-4C27-B487-FBDFDF5B3F19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31FC25CD-F294-4C27-B487-FBDFDF5B3F19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31FC25CD-F294-4C27-B487-FBDFDF5B3F19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
