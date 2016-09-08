@@ -25,6 +25,22 @@ namespace Exercise1
             //var surNames = new List<string>();
             var newList = new List<Person>();
 
+            var unsorted = true;
+
+            while (unsorted)
+            {
+                unsorted = false;
+                for (int i = 0; i < personList.Count() - 1; i++)
+                {
+                    if (string.Compare(personList[i].SurName, personList[i + 1].SurName) > 0)
+                    {
+                        var tmp = personList[i];
+                        personList[i] = personList[i + 1];
+                        personList[i + 1] = tmp;
+                        unsorted = true;
+                    }
+                } 
+            }
             //foreach (var person in personList)
             //{
             //    surNames.Add(person.SurName);
@@ -45,9 +61,9 @@ namespace Exercise1
             //    }
             //}
 
-            newList = personList.OrderBy(x => x.SurName).ToList();
+            //newList = personList.OrderBy(x => x.SurName).ToList();
 
-            return newList;
+            return personList;
             
 
         }
