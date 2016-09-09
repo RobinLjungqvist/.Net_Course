@@ -16,7 +16,7 @@ namespace winformDALexercise
         public Form1()
         {
             InitializeComponent();
-            Populate();
+            //Populate();
             BindGrid();
             
         }
@@ -56,6 +56,22 @@ namespace winformDALexercise
             dal.InsertAuthor("David", "Eddings");
             dal.InsertAuthor("J.K", "Rowling");
             dal.CloseConnection();
+
+        }
+
+        private void btn_Add_Click(object sender, EventArgs e)
+        {
+            var dal = new DAL_Author();
+            var fName = txtbox_fName.Text;
+            var lName = txtbox_lastName.Text;
+            dal.OpenConnection(@"Data Source=(local);Initial Catalog=books;User ID=Ropplon; Password=robin;Integrated Security = True");
+            dal.InsertAuthor(fName, lName);
+            BindGrid();
+            dal.CloseConnection();
+            txtbox_fName.Clear();
+            txtbox_lastName.Clear();
+
+
 
         }
     }

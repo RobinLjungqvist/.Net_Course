@@ -35,6 +35,11 @@ namespace winformDALexercise
             this.txtbox_AuthorIDtoDelete = new System.Windows.Forms.TextBox();
             this.lbl_authorDelete = new System.Windows.Forms.Label();
             this.btn_Delete = new System.Windows.Forms.Button();
+            this.lbl_Enter_firstname = new System.Windows.Forms.Label();
+            this.txtbox_fName = new System.Windows.Forms.TextBox();
+            this.lbl_Enter_Lastname = new System.Windows.Forms.Label();
+            this.txtbox_lastName = new System.Windows.Forms.TextBox();
+            this.btn_Add = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.AuthorGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,7 +60,7 @@ namespace winformDALexercise
             // 
             this.txtbox_AuthorIDtoDelete.Location = new System.Drawing.Point(138, 169);
             this.txtbox_AuthorIDtoDelete.Name = "txtbox_AuthorIDtoDelete";
-            this.txtbox_AuthorIDtoDelete.Size = new System.Drawing.Size(112, 20);
+            this.txtbox_AuthorIDtoDelete.Size = new System.Drawing.Size(45, 20);
             this.txtbox_AuthorIDtoDelete.TabIndex = 1;
             // 
             // lbl_authorDelete
@@ -69,7 +74,7 @@ namespace winformDALexercise
             // 
             // btn_Delete
             // 
-            this.btn_Delete.Location = new System.Drawing.Point(256, 169);
+            this.btn_Delete.Location = new System.Drawing.Point(189, 167);
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.Size = new System.Drawing.Size(75, 23);
             this.btn_Delete.TabIndex = 3;
@@ -77,11 +82,58 @@ namespace winformDALexercise
             this.btn_Delete.UseVisualStyleBackColor = true;
             this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
+            // lbl_Enter_firstname
+            // 
+            this.lbl_Enter_firstname.AutoSize = true;
+            this.lbl_Enter_firstname.Location = new System.Drawing.Point(40, 199);
+            this.lbl_Enter_firstname.Name = "lbl_Enter_firstname";
+            this.lbl_Enter_firstname.Size = new System.Drawing.Size(83, 13);
+            this.lbl_Enter_firstname.TabIndex = 4;
+            this.lbl_Enter_firstname.Text = "Enter first name:";
+            // 
+            // txtbox_fName
+            // 
+            this.txtbox_fName.Location = new System.Drawing.Point(138, 199);
+            this.txtbox_fName.Name = "txtbox_fName";
+            this.txtbox_fName.Size = new System.Drawing.Size(112, 20);
+            this.txtbox_fName.TabIndex = 5;
+            // 
+            // lbl_Enter_Lastname
+            // 
+            this.lbl_Enter_Lastname.AutoSize = true;
+            this.lbl_Enter_Lastname.Location = new System.Drawing.Point(40, 227);
+            this.lbl_Enter_Lastname.Name = "lbl_Enter_Lastname";
+            this.lbl_Enter_Lastname.Size = new System.Drawing.Size(86, 13);
+            this.lbl_Enter_Lastname.TabIndex = 6;
+            this.lbl_Enter_Lastname.Text = "Enter last name: ";
+            // 
+            // txtbox_lastName
+            // 
+            this.txtbox_lastName.Location = new System.Drawing.Point(138, 227);
+            this.txtbox_lastName.Name = "txtbox_lastName";
+            this.txtbox_lastName.Size = new System.Drawing.Size(112, 20);
+            this.txtbox_lastName.TabIndex = 7;
+            // 
+            // btn_Add
+            // 
+            this.btn_Add.Location = new System.Drawing.Point(257, 223);
+            this.btn_Add.Name = "btn_Add";
+            this.btn_Add.Size = new System.Drawing.Size(75, 23);
+            this.btn_Add.TabIndex = 8;
+            this.btn_Add.Text = "Add";
+            this.btn_Add.UseVisualStyleBackColor = true;
+            this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(467, 261);
+            this.Controls.Add(this.btn_Add);
+            this.Controls.Add(this.txtbox_lastName);
+            this.Controls.Add(this.lbl_Enter_Lastname);
+            this.Controls.Add(this.txtbox_fName);
+            this.Controls.Add(this.lbl_Enter_firstname);
             this.Controls.Add(this.btn_Delete);
             this.Controls.Add(this.lbl_authorDelete);
             this.Controls.Add(this.txtbox_AuthorIDtoDelete);
@@ -100,6 +152,11 @@ namespace winformDALexercise
         private System.Windows.Forms.TextBox txtbox_AuthorIDtoDelete;
         private System.Windows.Forms.Label lbl_authorDelete;
         private System.Windows.Forms.Button btn_Delete;
+        private System.Windows.Forms.Label lbl_Enter_firstname;
+        private System.Windows.Forms.TextBox txtbox_fName;
+        private System.Windows.Forms.Label lbl_Enter_Lastname;
+        private System.Windows.Forms.TextBox txtbox_lastName;
+        private System.Windows.Forms.Button btn_Add;
     }
 }
 
